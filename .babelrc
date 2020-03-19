@@ -1,0 +1,14 @@
+
+
+{
+        //解析es6的语法
+    "presets": ["env", "stage-0"],
+    //插件,后面是一个数组关于mint-ui
+    "plugins": ["transform-runtime",["component", [
+        {
+          "libraryName": "mint-ui",
+          "style": true
+        }
+      ]]
+    ]
+}

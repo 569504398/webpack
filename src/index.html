@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+           
+<body >
+    <div id="app">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        <!-- 当执行webpack  时，首先看有没有webpack   ./scr/main.js     ./dist/bundle.js   这样的命令执行，没有执行当前项目中的webpack.config.js -->
+                  <!-- 会将入口文件打包当口指定文件出中，这样 浏览器原先不能解析es6的import现在能解析了 -->
+                  <!-- 这里是执行webpack存到dist目录下的文件 -->
+               <!-- <script src="./dist/bundle.js"></script> -->
+               <!-- <!-- 来源于内存中通过执行webpack-dev-server将输入output文件(当然并没有输入文件中生成)托管于指定的内存中可以通过 --contentBase  来指定托管的内存的位置  -> -->
+                       <!-- 不需要重新执行命令，也不需要刷新页面，实时缟绎 ，如果引入了html-webpack-plugin并配置了就不需要下面的引入了，它会在内存中将该index.html复制一份到内存中
+                        并将输入文件中bundl.js也加载进来 -->
+               <!-- <script src="/bundle.js"></script> -->
+               <!-- 引入css -->
+                <!-- <link rel="stylesheet" href="./css/test.css"> -->
+                <!-- bootstrap3.3.7支持这种引入 -->
+          
+                <!-- //引入组件 -->
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    </div>
+              
+</body>
+</html>
